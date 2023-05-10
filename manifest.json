@@ -1,0 +1,13 @@
+{
+  "name": "CODE.ORG SPY",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Reads CODE.ORG course activities results and generates a json file",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
