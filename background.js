@@ -12,7 +12,9 @@ document.getElementById('get-json').addEventListener('click', () => {
               };
 
             jsonObject.student = document.querySelector('span#header_display_name').textContent;
-            jsonObject.course = document.querySelector('h1#script-title').textContent;;
+            
+            let pathnamePieces = window.location.pathname.split('/');
+            jsonObject.course = pathnamePieces[pathnamePieces.length - 1];
 
             let lessonGroups = document.querySelectorAll('div.lesson-group');
             
