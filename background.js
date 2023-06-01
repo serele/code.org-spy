@@ -38,7 +38,7 @@ document.getElementById('get-json').addEventListener('click', () => {
                             let status = getActivityLevelStatus(bubble);
                             if(status != ''){
                                 var activity = {                                    
-                                    number: bubble.innerText,
+                                    id: bubble.innerText,
                                     status: status
                                 }        
                                 lesson.name = act.cells[0].innerText;
