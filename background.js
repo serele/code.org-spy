@@ -27,7 +27,7 @@ document.getElementById('get-json').addEventListener('click', () => {
                     lessonActivities.forEach(act => {
 
                         let lesson = {
-                            type: lessonGroup.childNodes[0].innerText,
+                            type: lessonGroup.childNodes[0].innerText.replace(/ /g, ''),
                             name: '',
                             activities: []
                         };
